@@ -16,10 +16,22 @@ enableTitleFooter: false
 
 ---
 
-## In deze presentatie
-- Een onderwerp
-- Een onderwerp
-- Een onderwerp
-- Vragen
+## In this presentation
+- Old situation
+- Current situation
+- Future Improvements
+- Questions
 
-## Vragen
+---
+
+## Old situation
+
+![](https://github.com/Barsonax/CI-Improvements/raw/master/images/old_situation.png)
+
+--
+
+## Old situation 2
+
+---
+
+## Questions
