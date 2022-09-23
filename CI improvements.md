@@ -33,19 +33,29 @@ enableTitleFooter: false
 
 --
 
+## How did it feel to maintain?
+
+--
+
 ![minefield](https://github.com/Barsonax/CI-Improvements/raw/master/images/minefield.jpg)
 
 --
 
-![minefield2](https://github.com/Barsonax/CI-Improvements/raw/master/images/minefield2.gif)
+<!-- .slide: data-background="https://github.com/Barsonax/CI-Improvements/raw/master/images/minefield2.gif" -->
 
 --
 
-## Cons
+## Why
 
-- No branching
-- Fail slow
-- Hidden dependencies
+- No branching possible
+- Continue after errors
+- Missing logging
+- Hidden dependencies between steps
+- Impossible to reproduce locally
+
+--
+
+<!-- .slide: data-background="https://github.com/Barsonax/CI-Improvements/raw/master/images/atomicbomb.gif" -->
 
 ---
 
@@ -87,6 +97,12 @@ enableTitleFooter: false
             Console.WriteLine("Hello!");
         });
 ```
+
+--
+
+## Split up tests
+
+- Allows running tests in parallel on multiple machines.
 
 --
 
