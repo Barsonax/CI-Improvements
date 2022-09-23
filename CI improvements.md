@@ -33,7 +33,7 @@ enableTitleFooter: false
 
 --
 
-## minefield image here
+![minefield](https://github.com/Barsonax/CI-Improvements/raw/master/images/minefield2-1017461915.jpg)
 
 --
 
@@ -53,6 +53,14 @@ enableTitleFooter: false
 
 --
 
+## Trend
+
+![trend](https://github.com/Barsonax/CI-Improvements/raw/master/images/BuildDurationTrend.png)
+
+- ~35 min to finish
+
+--
+
 ## Advantages
 
 - Config in git, branching is possible
@@ -66,11 +74,13 @@ enableTitleFooter: false
 ## Nuke build
 
 - Build automation tool
+- Target dependency model
 
 --
 
 ## Build reuse
 
+- Teamcity will only run builds if snapshots changed
 - Checkout rules
 
 --
