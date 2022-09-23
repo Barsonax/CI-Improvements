@@ -67,7 +67,7 @@ enableTitleFooter: false
 
 ![new situation](https://github.com/Barsonax/CI-Improvements/raw/master/images/new_situation.png)
 
-- ~35 min to finish
+- ~40 min to finish
 
 --
 
@@ -164,7 +164,7 @@ enableTitleFooter: false
 ## Run zoo tests with docker
 
 - Run sql container with docker
-- DB on a tmpfs mount
+- DB on a tmpfs mount to eliminate the disk bottleneck
 - Zoo test connect locally to the container
 
 ---
