@@ -1,5 +1,5 @@
 ---
-theme : "white"
+theme : "moon"
 transition: "slide"
 highlightTheme: "vs2015"
 slideNumber: true
@@ -33,7 +33,11 @@ enableTitleFooter: false
 
 --
 
-![minefield](https://github.com/Barsonax/CI-Improvements/raw/master/images/minefield2-1017461915.jpg)
+![minefield](https://github.com/Barsonax/CI-Improvements/raw/master/images/minefield.jpg)
+
+--
+
+![minefield2](https://github.com/Barsonax/CI-Improvements/raw/master/images/minefield2.gif)
 
 --
 
@@ -62,7 +66,7 @@ enableTitleFooter: false
 ## Advantages
 
 - Config in git, branching is possible
-- Logic in C# with NUKE build
+- Logic in NUKE build
 - Fail fast
 - More isolation
 - Build reuse
@@ -72,7 +76,17 @@ enableTitleFooter: false
 ## Nuke build
 
 - Build automation tool
+- C# console project and thus has full IDE and debugging support.
 - Target dependency model
+- <https://www.nuke.build/>
+
+```csharp
+    Target MyTarget => _ => _
+        .Executes(() =>
+        {
+            Console.WriteLine("Hello!");
+        });
+```
 
 --
 
@@ -118,6 +132,7 @@ enableTitleFooter: false
 ## Run zoo tests with docker
 
 - Run sql container with docker
+- DB on a tmpfs mount
 - Zoo test connect locally to the container
 
 ---
