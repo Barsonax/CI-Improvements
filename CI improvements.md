@@ -55,6 +55,10 @@ enableTitleFooter: false
 
 --
 
+## How can we solve this?
+
+--
+
 <!-- .slide: data-background="https://github.com/Barsonax/CI-Improvements/raw/master/images/atomicbomb.gif" -->
 
 ---
@@ -75,9 +79,11 @@ enableTitleFooter: false
 
 ## Advantages
 
-- Config in git, branching is possible
 - Logic in NUKE build
+- Branching is possible
 - Fail fast
+- Beter logging
+- Parallel execution
 - More isolation
 - Build reuse
 
@@ -100,9 +106,19 @@ enableTitleFooter: false
 
 --
 
-## Split up tests
+## Logging
 
-- Allows running tests in parallel on multiple machines.
+- By default NUKE build shows command invocations with parameters
+- Some build steps were changed to add additional logging
+
+![trend](https://github.com/Barsonax/CI-Improvements/raw/master/images/Logging.png)
+
+--
+
+## Split up build
+
+- Allows running builds in parallel on multiple machines.
+- Better isolation, if octopus is down unit tests can still be run for instance
 
 --
 
@@ -120,7 +136,7 @@ enableTitleFooter: false
 - Affects the files that are checked out
 - Also affects snapshots
 
-![reusebuilds](https://github.com/Barsonax/CI-Improvements/raw/master/images/CheckkoutRules.png)
+![checkoutrules](https://github.com/Barsonax/CI-Improvements/raw/master/images/CheckkoutRules.png)
 
 ---
 
