@@ -40,7 +40,7 @@ enableTitleFooter: false
 ## Cons
 
 - No branching
-- No fail fast
+- Fail slow
 - Hidden dependencies
 
 ---
@@ -53,11 +53,9 @@ enableTitleFooter: false
 
 --
 
-## Trend
+## Trend towards faster
 
 ![trend](https://github.com/Barsonax/CI-Improvements/raw/master/images/BuildDurationTrend.png)
-
-- ~35 min to finish
 
 --
 
@@ -80,16 +78,19 @@ enableTitleFooter: false
 
 ## Build reuse
 
-- Teamcity will only run builds if snapshots changed
-- Checkout rules
+- If configured Teamcity will only run builds if snapshots changed
+
+![reusebuilds](https://github.com/Barsonax/CI-Improvements/raw/master/images/ReuseBuilds.png)
 
 --
 
 ## Checkout rules
 
 - Is not a trigger rule
-- Checkout only what you need
-- Reuse a previous build if snapshot is not changed
+- Affects the files that are checked out
+- Also affects snapshots
+
+![reusebuilds](https://github.com/Barsonax/CI-Improvements/raw/master/images/CheckkoutRules.png)
 
 ---
 
