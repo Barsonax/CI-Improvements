@@ -77,7 +77,14 @@ enableTitleFooter: false
 
 --
 
-## Advantages
+## Why so much focus on faster builds?
+
+- Core feedback loop
+- Humans are bad multitaskers
+
+--
+
+## Not just faster
 
 - Logic in NUKE build
 - Branching is possible
@@ -138,6 +145,15 @@ enableTitleFooter: false
 
 ![checkoutrules](https://github.com/Barsonax/CI-Improvements/raw/master/images/CheckkoutRules.png)
 
+--
+
+## Other improvements
+
+- Packagereferences
+- Binding redirects
+- NET sdk projects
+- Faster local feedback loop
+
 ---
 
 ## Future Improvements
@@ -164,6 +180,7 @@ enableTitleFooter: false
 ## Run zoo tests with docker
 
 - Run sql container with docker
+- Horizontal scaling
 - DB on a tmpfs mount to eliminate the disk bottleneck
 - Zoo test connect locally to the container
 
