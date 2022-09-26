@@ -25,11 +25,19 @@ enableTitleFooter: false
 
 ---
 
-## Old situation
+## Old Uptrends situation
 
 ![old situation](https://github.com/Barsonax/CI-Improvements/raw/master/images/old_situation.png)
 
 - ~65 min to finish
+
+--
+
+## Old Infra situation
+
+![old infra situation](https://github.com/Barsonax/CI-Improvements/raw/master/images/infra_old_situation)
+
+- ~50 min to finish
 
 --
 
@@ -63,11 +71,19 @@ enableTitleFooter: false
 
 ---
 
-## Current situation
+## Current Uptrends situation
 
 ![new situation](https://github.com/Barsonax/CI-Improvements/raw/master/images/new_situation.png)
 
-- ~36 min to finish
+- ~36 min to finish (44.6% faster)
+
+--
+
+## Current Infra situation
+
+![new situation](https://github.com/Barsonax/CI-Improvements/raw/master/images/infra_new_situation.png)
+
+- ~28 min to finish (44% faster)
 
 --
 
