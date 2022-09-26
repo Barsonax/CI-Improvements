@@ -67,7 +67,7 @@ enableTitleFooter: false
 
 ![new situation](https://github.com/Barsonax/CI-Improvements/raw/master/images/new_situation.png)
 
-- ~40 min to finish
+- ~36 min to finish
 
 --
 
