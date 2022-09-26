@@ -106,7 +106,6 @@ enableTitleFooter: false
 - Branching is possible
 - Fail fast
 - Beter logging
-- Parallel execution
 - More isolation
 - Build reuse
 
