@@ -35,7 +35,7 @@ enableTitleFooter: false
 
 ## Old Infra situation
 
-![old infra situation](https://github.com/Barsonax/CI-Improvements/raw/master/images/infra_old_situation)
+![old infra situation](https://github.com/Barsonax/CI-Improvements/raw/master/images/infra_old_situation.png)
 
 - ~50 min to finish
 
@@ -97,6 +97,7 @@ enableTitleFooter: false
 
 - Core feedback loop
 - Humans are bad multitaskers
+- Productive developers are happy developers
 
 --
 
@@ -173,8 +174,9 @@ enableTitleFooter: false
 
 ## Future Improvements
 
-- Further separate builds.
-- Use artifact dependencies.
+- Nuke all the builds
+- Further separate builds
+- Use artifact dependencies
 - Run zoo tests in docker
 
 --
