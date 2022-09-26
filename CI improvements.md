@@ -25,11 +25,19 @@ enableTitleFooter: false
 
 ---
 
-## Old situation
+## Old Uptrends situation
 
 ![old situation](https://github.com/Barsonax/CI-Improvements/raw/master/images/old_situation.png)
 
 - ~65 min to finish
+
+--
+
+## Old Infra situation
+
+![old infra situation](https://github.com/Barsonax/CI-Improvements/raw/master/images/infra_old_situation.png)
+
+- ~50 min to finish
 
 --
 
@@ -63,11 +71,19 @@ enableTitleFooter: false
 
 ---
 
-## Current situation
+## Current Uptrends situation
 
 ![new situation](https://github.com/Barsonax/CI-Improvements/raw/master/images/new_situation.png)
 
-- ~40 min to finish
+- ~36 min to finish (44.6% faster)
+
+--
+
+## Current Infra situation
+
+![new situation](https://github.com/Barsonax/CI-Improvements/raw/master/images/infra_new_situation.png)
+
+- ~28 min to finish (44% faster)
 
 --
 
@@ -77,13 +93,26 @@ enableTitleFooter: false
 
 --
 
-## Advantages
+## Why so much focus on the build?
+
+- Core feedback loop
+- Humans are bad multitaskers
+- Productive developers are happy developers
+
+--
+
+## 2020 DevSecOps Community Survey
+
+<img style="border: unset; box-shadow: unset" width="70%" data-src="https://github.com/Barsonax/CI-Improvements/raw/master/images/sonatype_survey.png">
+
+--
+
+## Not just faster
 
 - Logic in NUKE build (C#)
 - Branching
 - Fail fast
 - Better logging
-- Parallel execution
 - More isolation
 - Build reuse
 
@@ -159,12 +188,22 @@ enableTitleFooter: false
 
 ![checkoutrules](https://github.com/Barsonax/CI-Improvements/raw/master/images/CheckkoutRules.png)
 
+--
+
+## Other improvements
+
+- Packagereferences
+- Binding redirects
+- NET sdk projects
+- Faster local feedback loop
+
 ---
 
 ## Future Improvements
 
-- Further separate builds.
-- Use artifact dependencies.
+- Nuke all the builds
+- Further separate builds
+- Use artifact dependencies
 - Run zoo tests in docker
 
 --
@@ -185,9 +224,17 @@ enableTitleFooter: false
 ## Run zoo tests with docker
 
 - Run sql container with docker
+- Horizontal scaling
 - DB on a tmpfs mount to eliminate the disk bottleneck
 - Zoo test connect locally to the container
 
 ---
 
 ## Questions
+
+---
+
+## Links
+
+- https://nuke.build/
+- https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal
