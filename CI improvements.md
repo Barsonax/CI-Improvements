@@ -93,11 +93,17 @@ enableTitleFooter: false
 
 --
 
-## Why so much focus on faster builds?
+## Why so much focus on the build?
 
 - Core feedback loop
 - Humans are bad multitaskers
 - Productive developers are happy developers
+
+--
+
+## 2020 DevSecOps Community Survey
+
+<img style="border: unset; box-shadow: unset" width="70%" data-src="https://github.com/Barsonax/CI-Improvements/raw/master/images/sonatype_survey.png">
 
 --
 
