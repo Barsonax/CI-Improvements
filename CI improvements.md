@@ -47,11 +47,11 @@ enableTitleFooter: false
 
 ## Why
 
-- No branching possible
+- No branching
 - Continue after errors
 - Missing logging
 - Hidden dependencies between steps
-- Impossible to reproduce locally
+- Logic scattered throughout TeamCity
 
 --
 
@@ -71,7 +71,7 @@ enableTitleFooter: false
 
 --
 
-## Trend towards faster
+## Decreasing build duration
 
 ![trend](https://github.com/Barsonax/CI-Improvements/raw/master/images/BuildDurationTrend.png)
 
@@ -79,10 +79,10 @@ enableTitleFooter: false
 
 ## Advantages
 
-- Logic in NUKE build
-- Branching is possible
+- Logic in NUKE build (C#)
+- Branching
 - Fail fast
-- Beter logging
+- Better logging
 - Parallel execution
 - More isolation
 - Build reuse
@@ -106,6 +106,22 @@ enableTitleFooter: false
 
 --
 
+## Uptrends build example
+
+```csharp
+    Target Uptrends4Build => _ => _
+        .DependsOn(
+            NugetAuthenticate,
+            Uptrends4CopyPatchConfigs,
+            Uptrends4FrontendBuild,
+            Uptrends4BackendBuild,
+            UptrendsCreateNuGetPackages,
+            UptrendsPushOctopusPackages,
+            ErrorCodeDocumentationExport,
+            ReviewUntranslatedTexts
+        );
+--
+
 ## Logging
 
 - By default NUKE build shows command invocations with parameters
@@ -119,13 +135,18 @@ enableTitleFooter: false
 
 - Allows running builds in parallel on multiple machines.
 - Better isolation, if octopus is down unit tests can still be run for instance
+- Faster feedback
+
+--
+
+![trend](https://github.com/Barsonax/CI-Improvements/raw/master/images/MultipleAgents.png)
 
 --
 
 ## Build reuse
 
-- If configured Teamcity will only run builds if snapshots changed
-
+- Runs only when sources of snapshot changed
+  
 ![reusebuilds](https://github.com/Barsonax/CI-Improvements/raw/master/images/ReuseBuilds.png)
 
 --
@@ -133,8 +154,8 @@ enableTitleFooter: false
 ## Checkout rules
 
 - Is not a trigger rule
-- Affects the files that are checked out
-- Also affects snapshots
+- Allows for checking out part of the repository
+- Affects snapshots -> Build reuse
 
 ![checkoutrules](https://github.com/Barsonax/CI-Improvements/raw/master/images/CheckkoutRules.png)
 
