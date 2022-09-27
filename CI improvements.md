@@ -87,7 +87,7 @@ enableTitleFooter: false
 
 --
 
-## Decreasing build duration
+## Downtrend build duration
 
 ![trend](https://github.com/Barsonax/CI-Improvements/raw/master/images/BuildDurationTrend.png)
 
@@ -121,7 +121,8 @@ enableTitleFooter: false
 ## Nuke build
 
 - Build automation tool
-- C# console project and thus has full IDE and debugging support.
+- C# console project 
+- full IDE and debugging support.
 - Target dependency model
 - <https://www.nuke.build/>
 
@@ -153,22 +154,24 @@ enableTitleFooter: false
 
 ## Logging
 
-- By default NUKE build shows command invocations with parameters
+- Command invocations with parameters
+  - By default in NUKE build
 - Some build steps were changed to add additional logging
 
-![trend](https://github.com/Barsonax/CI-Improvements/raw/master/images/Logging.png)
+![logging](https://github.com/Barsonax/CI-Improvements/raw/master/images/Logging.png)
 
 --
 
 ## Split up build
 
-- Allows running builds in parallel on multiple machines.
-- Better isolation, if octopus is down unit tests can still be run for instance
+- Parallel builds on multiple machines.
+- Better isolation 
+  - e.g. octopus is down unit tests are still executed
 - Faster feedback
 
 --
 
-![trend](https://github.com/Barsonax/CI-Improvements/raw/master/images/MultipleAgents.png)
+![multiple_agents](https://github.com/Barsonax/CI-Improvements/raw/master/images/MultipleAgents.png)
 
 --
 
@@ -196,6 +199,7 @@ enableTitleFooter: false
 - Binding redirects
 - NET sdk projects
 - Faster local feedback loop
+- Test projects naming convention
 
 ---
 
@@ -204,7 +208,7 @@ enableTitleFooter: false
 - Nuke all the builds
 - Further separate builds
 - Use artifact dependencies
-- Run zoo tests in docker
+- Run zoo tests in Docker
 
 --
 
@@ -217,16 +221,16 @@ enableTitleFooter: false
 
 ## Use artifact dependencies
 
-- Prevent having to build multiple times
+- Prevent redundant builds
 
 --
 
-## Run zoo tests with docker
+## Run zoo tests with Docker
 
-- Run sql container with docker
+- Run SQL container with Docker
 - Horizontal scaling
-- DB on a tmpfs mount to eliminate the disk bottleneck
-- Zoo test connect locally to the container
+- DB on a `tmpfs` mount to eliminate the disk bottleneck
+- Zoo tests run on local container instead of the `NUKA`
 
 ---
 
