@@ -11,7 +11,7 @@ enableTitleFooter: false
 ## CI improvements
 
 <a>
-    <img style="border: unset; box-shadow: unset" data-src="https://github.com/Barsonax/nukepresentation/raw/master/images/BuildChains.png">
+    <img style="border: unset; box-shadow: unset" data-src="https://github.com/Barsonax/CI-Improvements/raw/master/images/BuildChains.png">
 </a>
 
 ---
