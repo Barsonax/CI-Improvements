@@ -59,7 +59,7 @@ enableTitleFooter: false
 - Continue after errors
 - Missing logging
 - Hidden dependencies between steps
-- Logic scattered throughout TeamCity
+- Logic scattered throughout TeamCity (powershell, TC tools, command line)
 
 --
 
