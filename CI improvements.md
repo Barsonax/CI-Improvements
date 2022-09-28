@@ -121,8 +121,8 @@ enableTitleFooter: false
 ## Nuke build
 
 - Build automation tool
-- C# console project 
-- full IDE and debugging support.
+- C# console project
+- full IDE and debugging support
 - Target dependency model
 - <https://www.nuke.build/>
 
@@ -148,8 +148,8 @@ enableTitleFooter: false
 
 ## Split up build
 
-- Parallel builds on multiple machines.
-- Better isolation 
+- Parallel builds on multiple machines
+- Better isolation
   - e.g. octopus is down unit tests are still executed
 - Faster feedback
 
