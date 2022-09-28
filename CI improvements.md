@@ -136,22 +136,6 @@ enableTitleFooter: false
 
 --
 
-## Uptrends build example
-
-```csharp
-    Target Uptrends4Build => _ => _
-        .DependsOn(
-            NugetAuthenticate,
-            Uptrends4CopyPatchConfigs,
-            Uptrends4FrontendBuild,
-            Uptrends4BackendBuild,
-            UptrendsCreateNuGetPackages,
-            UptrendsPushOctopusPackages,
-            ErrorCodeDocumentationExport,
-            ReviewUntranslatedTexts
-        );
---
-
 ## Logging
 
 - Command invocations with parameters
@@ -178,6 +162,7 @@ enableTitleFooter: false
 ## Build reuse
 
 - Runs only when sources of snapshot changed
+- <https://www.jetbrains.com/help/teamcity/snapshot-dependencies.html#Suitable+Builds>
   
 ![reusebuilds](https://github.com/Barsonax/CI-Improvements/raw/master/images/ReuseBuilds.png)
 
@@ -185,9 +170,9 @@ enableTitleFooter: false
 
 ## Checkout rules
 
-- Is not a trigger rule
 - Allows for checking out part of the repository
 - Affects snapshots -> Build reuse
+- <https://www.jetbrains.com/help/teamcity/vcs-checkout-rules.html>
 
 ![checkoutrules](https://github.com/Barsonax/CI-Improvements/raw/master/images/CheckkoutRules.png)
 
